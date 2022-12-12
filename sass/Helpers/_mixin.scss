@@ -1,0 +1,32 @@
+@mixin text(
+  $fs-fontsize: $cl-primary,
+  $fw-fontweight: 400,
+  $cl-color: $cl-dark
+) {
+  font-size: $fs-fontsize;
+  font-weight: $fw-fontweight;
+  color: $cl-color;
+}
+@mixin bg-position($bg-position: center, $bg-size: cover, $bg-attach: scroll) {
+  background-position: $bg-position;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: $bg-attach;
+}
+@mixin input_text(
+  $pd-padding: 12px,
+  $bd-border:
+  1px solid #00000081,
+  $ol-outline: none
+) {
+  line-height: 1;
+  padding: $pd-padding;
+  outline: $ol-outline;
+  border:  1px solid #0000004d;
+  &:focus {
+    border: $bd-border;
+  }
+}
+@mixin input_border {
+  border:  1px solid #0000004d;
+}

@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+* ol, * ul {
+  padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  line-height: 1.8rem;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header .container {
+  height: 80px;
+  background-color: transparent;
+  position: fixed;
+  border: 3px dashed blueviolet;
+  width: 100%;
+  z-index: 10;
+  content: "navbar";
+}
+
+.about {
+  position: relative;
+  padding: 60px 0;
+  z-index: 2;
+}
+.about .about__bg-upper {
+  position: absolute;
+  height: 30%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url(../../images/yellow_top_wave_01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: bottom left;
+}
+.about .about__bg-lower {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url(../../images/Violet_top_left_wave.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: bottom;
+  background-size: contain;
+}
+.about .container {
+  align-items: center;
+}
+.about .container .intro h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b61984;
+  text-transform: uppercase;
+}
+.about .container .intro h2 {
+  font-size: 57px;
+  font-weight: 700;
+  color: #191919;
+  line-height: 1.2;
+}
+.teacher {
+  position: relative;
+  padding-top: 1rem;
+  background-color: #dcd1f0;
+}
+.teacher .container.row {
+  position: relative;
+  padding: 0;
+}
+.teacher .container.row .col {
+  padding: 20px;
+}
+.teacher .container.row .col .single-item {
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 2;
+  background-color: #ffffff;
+  transition: 0.5s;
+  border: 0.5px solid #dcd1f0;
+}
+.teacher .container.row .col .single-item:hover {
+  box-shadow: 0px 7px 10px 4px rgba(92, 92, 92, 0.3098039216);
+}
+.teacher .container.row .col .single-item .item-image {
+  margin-bottom: calc(2rem + 5px);
+  overflow: hidden;
+}
+.teacher .container.row .col .single-item .item-image img {
+  transition: 0.5s;
+}
+.teacher .container.row .col .single-item .item-image:hover img {
+  transform: scale(1.05);
+}
+.teacher .container.row .col .single-item .item-detail {
+  padding: 0 2rem calc(2rem + 5px);
+}
+.teacher .container.row .col .single-item .item-detail .country {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b61984;
+  text-transform: uppercase;
+}
+.teacher .container.row .col .single-item .item-detail .teacher-name {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #191919;
+  margin-bottom: 1rem;
+}
+.teacher .container.row .col .single-item .item-detail .des {
+  line-height: 1.8rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  cursor: default;
+}
+.teacher::after {
+  position: absolute;
+  content: "";
+  height: 40%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../../images/Wave_White_bottom_right_shape_01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: top right;
+}
+
+body {
+  background-color: brown;
+}
+
+.register {
+  padding-top: 60px;
+}
+.register .container .register-part {
+  padding: 0 3rem;
+}
+.register .container .collum-img {
+  text-align: end;
+}
+.register .container .collum-img img {
+  width: 80%;
+}
+.register .container .collum-form {
+  color: #191919;
+  padding: 0 2rem;
+  background-color: rgb(233, 233, 168);
+}
+.register .container .collum-form h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #191919;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+.register .container .collum-form .reg-form .reg-row {
+  padding-bottom: 1rem;
+}
+.register .container .collum-form .reg-form .reg-row > div {
+  position: relative;
+}
+.register .container .collum-form .reg-form .reg-row > div i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 1rem;
+  color: #b61984;
+}
+.register .container .collum-form .reg-form .reg-row > div input {
+  width: 100%;
+  line-height: 1;
+  padding: 12px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3019607843);
+  padding-left: 2rem;
+  border-radius: 50px;
+  padding-left: 42px;
+}
+.register .container .collum-form .reg-form .reg-row > div input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.5058823529);
+}
+.register .container .collum-form .reg-form .reg-row > div textarea {
+  width: 100%;
+  line-height: 1;
+  padding: 12px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3019607843);
+  border-radius: 20px;
+  padding-left: 42px;
+}
+.register .container .collum-form .reg-form .reg-row > div textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.5058823529);
+}
+.register .container .collum-form .reg-form .reg-row:last-of-type i {
+  position: absolute;
+  top: 20px;
+  transform: translateY(-50%);
+  padding-left: 1rem;
+}
+.register .container .collum-form .reg-form .reg-row .reg-lang-select i {
+  z-index: 2;
+}
+.register .container .collum-form .reg-form .reg-row .reg-lang-select .lang-selected {
+  background-color: #ffffff;
+  text-align: start;
+  width: 100%;
+  line-height: 1;
+  padding: 12px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3019607843);
+  border-radius: 50px;
+  padding-left: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.register .container .collum-form .reg-form .reg-row .reg-lang-select .lang-selected:focus {
+  border: 1px solid rgba(0, 0, 0, 0.5058823529);
+}
+.register .container .collum-form .reg-form .reg-row .reg-lang-select ul {
+  width: 100%;
+}
+.register .container .collum-form .reg-form .reg-row .reg-lang-select ul button:hover {
+  background-color: #ffffff;
+  color: #b61984;
+}
+
+.footer {
+  height: 30vh;
+}

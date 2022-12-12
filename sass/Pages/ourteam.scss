@@ -1,0 +1,269 @@
+// helpers
+@import "../Helpers/variables";
+@import "../Helpers/mixin";
+// base
+@import "../base/resetcss";
+// components
+@import "../components/buttons";
+// layout
+@import "../layouts/header";
+@import "../layouts/footer";
+@import "../layouts/sidebar";
+// just for remind
+
+///////////////////////////////////////////////////////
+
+.header {
+  display: flex;
+  justify-content: center;
+  .container {
+    height: 80px;
+    background-color: transparent;
+    position: fixed;
+    border: 3px dashed blueviolet;
+    width: 100%;
+    z-index: 10;
+    content: "navbar";
+  }
+}
+// about
+.about {
+  position: relative;
+  padding: $pd-section 0;
+  z-index: 2;
+  .about__bg-upper {
+    position: absolute;
+    height: 30%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(../../images/yellow_top_wave_01.png);
+    @include bg-position();
+    background-position: bottom left;
+  }
+  .about__bg-lower {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(../../images/Violet_top_left_wave.png);
+    @include bg-position();
+    background-position: bottom;
+    background-size: contain;
+  }
+  .container {
+    align-items: center;
+    .intro {
+      h5 {
+        @include text(1.1rem, 600, $cl-primary);
+        text-transform: uppercase;
+      }
+      h2 {
+        @include text(57px, $fw-bolder, $cl-dark);
+        line-height: 1.2;
+      }
+    }
+    .b-ground {
+    }
+  }
+}
+// Teacher
+.teacher {
+  position: relative;
+  padding-top: $pd-1;
+  background-color: $bgc-secondary;
+  .container.row {
+    position: relative;
+    padding: 0;
+    .col {
+      padding: 20px;
+      .single-item {
+        position: relative;
+        text-align: center;
+        border-radius: 10px;
+        overflow: hidden;
+        z-index: 2;
+        background-color: $bgc-primaray;
+        transition: 0.5s;
+        border: 0.5px solid $bgc-secondary;
+        &:hover {
+          box-shadow: 0px 7px 10px 4px #5c5c5c4f;
+        }
+        .item-image {
+          margin-bottom: calc($pd-2 + 5px);
+          overflow: hidden;
+          img {
+            transition: 0.5s;
+          }
+          &:hover img {
+            transform: scale(1.05);
+          }
+        }
+        .item-detail {
+          padding: 0 $pd-2 calc($pd-2 + 5px);
+          .country {
+            @include text(0.75rem, $fw-bold, $cl-primary);
+            text-transform: uppercase;
+          }
+          .teacher-name {
+            @include text(1.55rem, $fw-bolder, $cl-dark);
+            margin-bottom: $m-1;
+          }
+          .des {
+            line-height: 1.8rem;
+            font-family: $ff-secondary;
+            cursor: default;
+          }
+        }
+      }
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    height: 40%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../images/Wave_White_bottom_right_shape_01.png);
+    @include bg-position();
+    background-position: top right;
+  }
+}
+// Register
+body {
+  background-color: brown;
+}
+.register {
+  padding-top: $pd-section;
+  .container {
+    .register-part {
+      padding: 0 $pd-3;
+    }
+    .collum-img {
+      text-align: end;
+      img {
+        width: 80%;
+      }
+    }
+    .collum-form {
+      h3 {
+        @include text(2.5rem, 700, $cl-dark);
+        text-align: center;
+        padding-top: $pd-1;
+        padding-bottom: $pd-3;
+      }
+      color: $cl-dark;
+      padding: 0 $pd-2;
+      background-color: rgb(233, 233, 168);
+      .reg-form {
+        .reg-row {
+            padding-bottom: $pd-1;
+         &>div {
+            position: relative;
+            i {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                padding-left: $pd-1;
+                color: $cl-primary;
+            }
+            input {
+                width: 100%;
+                @include input_text();
+                padding-left: $pd-2;
+                border-radius: 50px;
+                padding-left: 42px;
+            }
+            textarea {
+                width: 100%;
+                @include input_text();
+                border-radius: 20px;
+                padding-left: 42px;
+            }
+         }
+         &:last-of-type {
+            i {
+                position: absolute;
+                top: 20px;
+                transform: translateY(-50%);
+                padding-left: $pd-1;
+            }
+         }
+         .reg-lang-select {
+            // .lang-selected {
+            //     background-color: $cl-light;
+            //     @include input_text();
+            //     border-radius: 50px;
+            //     padding-left: 42px;
+            //     cursor: pointer;
+            // }
+            // .dropdown-list {
+            //     position: absolute;
+            //     opacity: 0;
+            //     visibility: hidden;
+            //     z-index: 3;
+            //     transition: 0.3s;
+            //     padding-left: 42px;
+            //     list-style: none;
+            //     width: 100%;
+            //     @include input_border;
+            //     border-radius: 4px;
+            // }
+            // &:hover {
+            //     .dropdown-list {
+            //         visibility: visible;
+            //         opacity: 1;
+            //         cursor: pointer;
+            //         background-color: $bgc-primaray;
+            //     }
+            // }
+            // .dropdown-list__item {
+            //     line-height: 2rem;
+            //     &:hover {
+            //         color: $cl-primary;
+            //     }
+            // }
+            i {
+                z-index: 2;
+            }
+            .lang-selected {
+                background-color: $bgc-primaray;
+                text-align: start;
+                width: 100%;
+                @include input_text();
+                border-radius: 50px;
+                padding-left: 42px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            ul {
+                width: 100%;
+                button:hover {
+                    background-color: $bgc-primaray;
+                    color: $cl-primary;
+                }
+            }
+        }
+        }
+      }
+    }
+  }
+}
+.footer {
+    height: 30vh;
+}
+//////   DELETE AFTER FINISH SITE //////
+@mixin text(
+  $fs-fontsize: $cl-primary,
+  $fw-fontweight: 400,
+  $cl-color: $cl-dark
+) {
+  font-size: $fs-fontsize;
+  font-weight: $fw-fontweight;
+  color: $cl-color;
+} ;
