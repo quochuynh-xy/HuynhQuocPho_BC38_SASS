@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  ol,
+  ul {
+    padding: 0;
+  }
+}
+$fw-bold: 700;
+$fw-normal: 400;
+$fw-thin: 200;
+$c-0: #000;
+$c-f: #fff;
+$c-r: red;
+$fs-base: 16px;
+$fs-s: 12px;
+$fs-xs: 6px;
+@mixin text($font-size: 16px, $font-weight: regular, $text-color: #000) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $text-color;
+}
+@mixin btn(
+  $b-ground: #ddd, // màu nền
+  $p-padding: 0.5 1rem, // padding
+  $bd-border: 1px solid #ddd, // border
+  $br-borderradius: 4px, // border radius
+  $fs-fontsize: 1.2rem, // font-size
+  $fw-fontweight: regular, // font-weight
+  $cl-color: #000, // màu chữ
+  $bgh-bghover: #333,
+  $clh-colorhover: #fff
+) {
+    transition: 0.3s;
+    cursor: pointer;
+    background: $b-ground ;
+    padding: $p-padding ;
+    border: $bd-border;
+    border-radius: $br-borderradius;
+    // font-size: $fs-fontsize;
+    // font-weight: $fw-fontweight;
+    // color: $cl-color;
+    @include text($fs-fontsize, $fw-fontweight, $cl-color);
+    &:hover {
+        background: $bgh-bghover;
+        color: $clh-colorhover ;
+    }
+}
+.container {
+  width: 80%;
+  max-width: 1280px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+// Start
+.header {
+  .nav-bar {
+    .btn {
+        @include btn(red, 1rem 2rem, 1px solid #333, 5px, 1.2rem, 700, #000, #fff, #333);
+        // @include btn(-ground, -padding, -border, -borderradius, -fontsize, -fontweight, -color, -bghover, -colorhover)
+    }
+    .text {
+      @include text();
+      color: green;
+    }
+  }
+}
