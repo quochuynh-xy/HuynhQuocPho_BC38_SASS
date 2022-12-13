@@ -15,18 +15,40 @@
 }
 @mixin input_text(
   $pd-padding: 12px,
-  $bd-border:
-  1px solid #00000081,
+  $bd-border: 1px solid #00000081,
   $ol-outline: none
 ) {
   line-height: 1;
   padding: $pd-padding;
   outline: $ol-outline;
-  border:  1px solid #0000004d;
+  border: 1px solid #0000004d;
   &:focus {
     border: $bd-border;
   }
 }
 @mixin input_border {
-  border:  1px solid #0000004d;
+  border: 1px solid #0000004d;
+}
+@mixin shadow-type1 {
+  // box-shadow: 0px 7px 14px 0px #5c5c5c4f;
+  box-shadow: 0px 7px 10px 4px #5c5c5c4f;
+}
+// box-shadow
+@mixin btn-boxshadow-light {
+  box-shadow: inset 0px 0px 0px 100px $cl-light;
+  &:hover {
+    box-shadow: inset 0px 0px 0px 1px $cl-light;
+    background-color: $cl-primary;
+    color: $cl-light;
+  }
+}
+@mixin btn-boxshdow-dark {
+  box-shadow: inset 0px 0px 0px 100px $cl-primary;
+} ;
+// border
+@mixin border-type-1 {
+  border: 1px solid #ffffff1a;
+}
+@mixin border-type-2 {
+  border: 1px solid #ffffff;
 }

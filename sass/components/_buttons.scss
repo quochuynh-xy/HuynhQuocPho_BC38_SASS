@@ -1,0 +1,19 @@
+@import "../Helpers/variables";
+@import "../Helpers/mixin";
+.btn-large {
+  height: 4em;
+  min-width: 10rem;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 0px 100px $cl-primary;
+  transition: 0.5s;
+//   line-height: 4em;
+  outline: none;
+  text-transform: uppercase;
+  color: $cl-light;
+  font-weight: $fw-bold;
+  &:hover {
+    box-shadow: inset 0px 0px 0px 1px $cl-primary;
+    color: $cl-primary;
+    background-color: $bgc-primaray;
+  }
+}

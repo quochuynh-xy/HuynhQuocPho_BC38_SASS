@@ -208,11 +208,11 @@
     </section>
     <!-- register -->
     <section class="register">
-      <div class="container row">
-        <div class="col-7 register-part collum-img">
+      <div class="container row justify-content-center">
+        <div class="col-6 register-part collum-img">
           <img src="./images/conatct_inner.png" alt="contact inner" />
         </div>
-        <div class="col-5 register-part collum-form">
+        <div class="col-4 register-part collum-form rounded-3">
           <h3>Find Your Course</h3>
           <div class="reg-form">
             <!-- name - email -->
@@ -241,14 +241,35 @@
                   <li class="dropdown-list__item">Chinese</li>
                 </ul> -->
                 <div class="dropdown">
-                  <button class="lang-selected dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button
+                    class="lang-selected dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
                     English
                   </button>
                   <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">English</button></li>
-                    <li><button class="dropdown-item" type="button">French</button></li>
-                    <li><button class="dropdown-item" type="button">Spanish</button></li>
-                    <li><button class="dropdown-item" type="button">Vietnamese</button></li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        English
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        French
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Spanish
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Vietnamese
+                      </button>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -257,16 +278,72 @@
               <!-- text area -->
               <div class="reg-mes">
                 <i class="fa-regular fa-message"></i>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" id="" cols="30" rows="10"> Message</textarea>
               </div>
             </div>
-            <button type="button">SEND</button>
+            <button class="btn-large" type="button">SEND</button>
           </div>
         </div>
       </div>
     </section>
     <!-- footer -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer-col col-3 col-contact">
+          <h4>Contact us</h4>
+          <ul>
+            <li>
+              <span href="#url"
+                ><i class="fa-solid fa-location-dot"></i>Franklin St, Greenpoint
+                Ave</span
+              >
+            </li>
+            <li>
+              <span href="#url"
+                ><i class="fa-solid fa-phone-flip"></i>+2342 5446 67</span
+              >
+            </li>
+            <li>
+              <span href="#url"
+                ><i class="fa-regular fa-clock"></i>Monday - Friday: 8 AM - 5
+                PM</span
+              >
+            </li>
+          </ul>
+          <div class="social">
+            <a><i class="fa-brands fa-twitter"></i></a
+            ><a><i class="fa-brands fa-instagram"></i></a
+            ><a><i class="fa-brands fa-facebook-f"></i></a
+            ><a><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col col-3 col-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#url">Home</a></li>
+            <li><a href="#url">Courses</a></li>
+            <li><a href="#url">Schedule</a></li>
+            <li><a href="#url">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col col-3 col-site">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#url">About Us</a></li>
+            <li><a href="#url">Events</a></li>
+            <li><a href="#url">Get Quote</a></li>
+            <li><a href="#url">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col col-3 col-func">
+          <h4>Newsletter</h4>
+          <form action="">
+            <input class="text-center" type="text" placeholder="Your email"/>
+            <button class="btn-large">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
     <!--  -->
     <!-- Bootstrap v5.2.3 js -->
     <script
