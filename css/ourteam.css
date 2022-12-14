@@ -256,6 +256,10 @@ body {
   text-align: center;
   color: #191919;
   display: inline-block;
+  transition: 0.3s;
+}
+.header .container .nav-bar .nav-contact .social-btns a:hover {
+  color: #b61984;
 }
 
 .about {
