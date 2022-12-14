@@ -13,19 +13,19 @@
 
 ///////////////////////////////////////////////////////
 
-.header {
-  display: flex;
-  justify-content: center;
-  .container {
-    height: 80px;
-    background-color: transparent;
-    position: fixed;
-    border: 3px dashed blueviolet;
-    width: 100%;
-    z-index: 10;
-    content: "navbar";
-  }
-}
+// .header {
+//   display: flex;
+//   justify-content: center;
+//   .container {
+//     height: 80px;
+//     background-color: transparent;
+//     position: fixed;
+//     border: 3px dashed blueviolet;
+//     width: 100%;
+//     z-index: 10;
+//     content: "navbar";
+//   }
+// }
 // about
 .about {
   position: relative;
