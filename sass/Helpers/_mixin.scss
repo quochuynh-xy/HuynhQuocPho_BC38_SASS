@@ -10,7 +10,7 @@
 @mixin bg-position($bg-position: center, $bg-size: cover, $bg-attach: scroll) {
   background-position: $bg-position;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: $bg-size;
   background-attachment: $bg-attach;
 }
 @mixin input_text(

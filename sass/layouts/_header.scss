@@ -17,12 +17,12 @@
       align-items: center;
       .nav-menu {
         ul {
-          .nav-col {
-            //<li>
+          .nav-col { //<li>
+            margin-right: 50px; // fix the menu hover issue
             position: relative;
             .menu-item {
               @include text(13px, $fw-bold, $cl-dark);
-              margin-right: 50px;
+              // margin-right: 50px; // fix the menu hover issue
               transition: 0.3s;
               position: relative;
               &:hover {
@@ -135,10 +135,10 @@
             .sub-menu-item3 {
               visibility: hidden;
               opacity: 0;
-              transition: 0.5s;
+              transition: $ts-2;
               .item-child {
                 display: block;
-                transition: 0.5s;
+                transition: $ts-2;
                 &:hover {
                   color: $cl-primary !important;
                 }
