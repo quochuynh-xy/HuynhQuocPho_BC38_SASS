@@ -87,13 +87,13 @@ body {
   align-items: center;
 }
 .header .container .nav-bar .nav-menu ul .nav-col {
+  margin-right: 50px;
   position: relative;
 }
 .header .container .nav-bar .nav-menu ul .nav-col .menu-item {
   font-size: 13px;
   font-weight: 600;
   color: #191919;
-  margin-right: 50px;
   transition: 0.3s;
   position: relative;
 }
@@ -260,6 +260,162 @@ body {
 }
 .header .container .nav-bar .nav-contact .social-btns a:hover {
   color: #b61984;
+}
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+* ol, * ul {
+  padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  line-height: 1.8rem;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.list-sty-none {
+  list-style-type: none;
+}
+
+.decoration-none {
+  text-decoration: none;
+}
+
+.btn-large {
+  height: 4em;
+  min-width: 10rem;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 0px 100px #b61984;
+  transition: 0.5s;
+  outline: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 600;
+}
+.btn-large:hover {
+  box-shadow: inset 0px 0px 0px 1px #b61984;
+  color: #b61984;
+  background-color: #ffffff;
+}
+
+.footer {
+  padding: 120px 0;
+  background-image: url(../../images/footer_background.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.footer .container .footer-col {
+  padding: 0 40px;
+}
+.footer .container .footer-col h4 {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+.footer .container .footer-col ul {
+  list-style: none;
+  font-size: 15px;
+}
+.footer .container .footer-col ul li a {
+  font-size: 0.9em;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 12px;
+  display: inline-block;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1019607843);
+}
+.footer .container .footer-col ul li a:hover {
+  opacity: 0.9;
+}
+.footer .container .footer-col ul li i {
+  margin-right: 0.5rem;
+}
+.footer .container .col-contact ul li span {
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  border-bottom: none;
+  line-height: 1em;
+  font-size: 0.9em;
+  cursor: default;
+}
+.footer .container .col-contact ul li span i {
+  font-size: 0.9em;
+  width: 1rem;
+  text-align: center;
+  margin-right: 1rem;
+}
+.footer .container .col-contact .social a {
+  color: #ffffff;
+  margin-right: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer .container .col-contact .social a:hover {
+  color: #191919;
+}
+.footer .container .col-func {
+  padding: 0 50px 0 40px;
+}
+.footer .container .col-func form {
+  font-size: 15px;
+}
+.footer .container .col-func form input {
+  width: 100%;
+  line-height: 1;
+  padding: 12px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.3019607843);
+  border: 1px solid rgba(255, 255, 255, 0.1019607843);
+  border-radius: 50px;
+  font-size: 0.9em;
+  margin-bottom: 0.5rem;
+  background-color: #aa207e;
+  color: #ffffff;
+}
+.footer .container .col-func form input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.5058823529);
+}
+.footer .container .col-func form input:focus {
+  border: 1px solid #ffffff;
+}
+.footer .container .col-func form input::placeholder {
+  color: #ffffff;
+}
+.footer .container .col-func form button {
+  font-size: 12px;
+  width: 100%;
+  background-color: #ffffff;
+  color: #b61984;
+  box-shadow: inset 0px 0px 0px 100px #ffffff;
+}
+.footer .container .col-func form button:hover {
+  box-shadow: inset 0px 0px 0px 1px #ffffff;
+  background-color: #b61984;
+  color: #ffffff;
 }
 
 .about {
@@ -497,106 +653,4 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
-}
-
-.footer {
-  padding: 120px 0;
-  background-image: url(../../images/footer_background.jpg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-}
-.footer .container .footer-col {
-  padding: 0 40px;
-}
-.footer .container .footer-col h4 {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 2rem;
-}
-.footer .container .footer-col ul {
-  list-style: none;
-  font-size: 15px;
-}
-.footer .container .footer-col ul li a {
-  font-size: 0.9em;
-  font-weight: 400;
-  color: #ffffff;
-  text-decoration: none;
-  margin-bottom: 12px;
-  display: inline-block;
-  border-bottom: 0.5px solid rgba(0, 0, 0, 0.1019607843);
-}
-.footer .container .footer-col ul li a:hover {
-  opacity: 0.9;
-}
-.footer .container .footer-col ul li i {
-  margin-right: 0.5rem;
-}
-.footer .container .col-contact ul li span {
-  color: #ffffff;
-  margin-bottom: 0.5rem;
-  border-bottom: none;
-  line-height: 1em;
-  font-size: 0.9em;
-  cursor: default;
-}
-.footer .container .col-contact ul li span i {
-  font-size: 0.9em;
-  width: 1rem;
-  text-align: center;
-  margin-right: 1rem;
-}
-.footer .container .col-contact .social a {
-  color: #ffffff;
-  margin-right: 1rem;
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.footer .container .col-contact .social a:hover {
-  color: #191919;
-}
-.footer .container .col-func {
-  padding: 0 50px 0 40px;
-}
-.footer .container .col-func form {
-  font-size: 15px;
-}
-.footer .container .col-func form input {
-  width: 100%;
-  line-height: 1;
-  padding: 12px;
-  outline: none;
-  border: 1px solid rgba(0, 0, 0, 0.3019607843);
-  border: 1px solid rgba(255, 255, 255, 0.1019607843);
-  border-radius: 50px;
-  font-size: 0.9em;
-  margin-bottom: 0.5rem;
-  background-color: #aa207e;
-  color: #ffffff;
-}
-.footer .container .col-func form input:focus {
-  border: 1px solid rgba(0, 0, 0, 0.5058823529);
-}
-.footer .container .col-func form input:focus {
-  border: 1px solid #ffffff;
-}
-.footer .container .col-func form input::placeholder {
-  color: #ffffff;
-}
-.footer .container .col-func form button {
-  font-size: 12px;
-  width: 100%;
-  background-color: #ffffff;
-  color: #b61984;
-  box-shadow: inset 0px 0px 0px 100px #ffffff;
-}
-.footer .container .col-func form button:hover {
-  box-shadow: inset 0px 0px 0px 1px #ffffff;
-  background-color: #b61984;
-  color: #ffffff;
 }
