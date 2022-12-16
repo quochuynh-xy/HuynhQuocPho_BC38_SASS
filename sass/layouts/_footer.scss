@@ -1,0 +1,104 @@
+@import "../base/resetcss";
+@import "../Helpers/variables";
+@import "../Helpers/mixin";
+@import "../components/buttons";
+.footer {
+    padding: $pd-section-footer 0;
+    background-image: url(../../images/footer_background.jpg);
+    @include bg-position(bottom, cover, scroll);
+    .container {
+      .footer-col {
+        padding: 0 40px;
+        h4 {
+          font-family: $ff-primary;
+          @include text($fs-l, $fw-bolder, $cl-light);
+          margin-bottom: $m-2;
+        }
+        ul {
+          list-style: none;
+          font-size: $fs-primary;
+          li {
+            a {
+              @include text(0.9em, 400, $cl-light);
+              text-decoration: none;
+              margin-bottom: 12px;
+              display: inline-block;
+              border-bottom: 0.5px solid #0000001a;
+              &:hover {
+                opacity: 0.9;
+              }
+            }
+            i {
+              margin-right: $m-05;
+            }
+          }
+        }
+        .social {
+          i {
+          }
+        }
+      }
+      .col-contact {
+        ul {
+          li {
+            span {
+              color: $cl-light;
+              margin-bottom: $m-05;
+              border-bottom: none;
+              line-height: 1em;
+              font-size: 0.9em;
+              cursor: default;
+              i {
+                // padding-right: $pd-05;
+                font-size: 0.9em;
+                width: 1rem;
+                text-align: center;
+                margin-right: 1rem;
+              }
+            }
+          }
+        }
+        .social {
+          a {
+            color: $cl-light;
+            margin-right: $m-1;
+            text-decoration: none;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+              color: $cl-dark;
+            }
+          }
+        }
+      }
+      .col-func {
+          padding: 0 50px 0 40px;
+        form {
+          font-size: $fs-primary;
+          input {
+            width: 100%;
+            @include input_text();
+            @include border-type-1();
+            border-radius: 50px;
+            font-size: 0.9em;
+            margin-bottom: $m-05;
+            background-color: $bgc-total;
+            color: $cl-light;
+            &:focus {
+              @include border-type-2();
+            }
+            &::placeholder {
+              color: $cl-light;
+            }
+          }
+          button {
+            font-size: 12px;
+            width: 100%;
+            background-color: $cl-light;
+            color: $cl-primary;
+            @include btn-boxshadow-light();
+          }
+        }
+      }
+    }
+  }
