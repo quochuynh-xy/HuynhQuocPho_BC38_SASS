@@ -219,6 +219,7 @@
       }
     }
   }
+  /// Vertical header
   .vertial-header {
     .ver-menu {
     }
@@ -226,21 +227,22 @@
       display: flex;
       align-items: center;
       width: 320px;
-      .logo-vertical {
-      }
+      // .logo-vertical {
+      // }
       .nav-bar-vertical {
         font-size: 13px;
         line-height: 1;
         width: 100%;
         text-align: center;
-        padding: 1rem 3rem;
+        padding: 1rem 2rem;
         .nav-item {
           position: relative;
           .menu-item {
             width: 100%;
             .menu-txt {
               padding: 1em 2em;
-              color: red;
+              color: $cl-grey;
+              text-decoration: none;
               display: block;
               width: 100%;
             }
@@ -251,26 +253,55 @@
             top: 0;
             right: 0;
             padding: 1em 2em;
+            font-size: 0.8rem;
+            color: $cl-grey;
+            text-decoration: none;
           }
-          .collapse-list {
-            .sub-menu-item {
+          .collapse-list { // menu cấp 1 (hiện bên ngoài)
+            .sub-menu-item { // menu cấp 2 (con menu cấp 1)
               position: relative;
               font-size: 0.9em;
+              & a { // menu cấp 3  (con menu cấp 2)
+                padding: 1em 2em;
+                color: $cl-grey;
+                text-decoration: none;
+                display: block;
+              }
               .menu-txt {
                 padding: 1em 2em;
-                color: orange;
+                color: $cl-grey;
+                text-decoration: none;
                 display: block;
                 width: 100%;
               }
               .collapse-list {
-                li {
-                  padding: 1em 2em;
+                & li {
+                  // padding: 1em 2em;
                   a {
-                    color: green;
+                    color: $cl-grey;
+                    text-decoration: none;
                     font-size: 0.9em;
                   }
                 }
               }
+            }
+          }
+        }
+      }
+      //Contact vertical Navbar
+      .nav-bar-vertical {
+        .nav-contact {
+          .contact-btn {
+            // @include btn-boxshadow-light();
+            display: block;
+            height: 3em;
+            line-height: 3em;
+            margin: $m-05 $m-2;
+          }
+          .social-btns {
+            a {
+              color: $cl-dark;
+              margin: 0 $m-025;
             }
           }
         }

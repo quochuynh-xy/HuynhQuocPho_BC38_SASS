@@ -166,12 +166,16 @@
         </div>
         <!-- vertical menu bar -->
         <div class="offcanvas offcanvas-start" data-bs-scroll="false" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-          <div class="logo-vertical offcanvas-head">
-            <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5> -->
-            <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+          <!-- <div class="logo-vertical offcanvas-head">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             <a href="#"><img src="./images/crest.png" alt="crest"></a>
-          </div>
+          </div> -->
           <nav class="nav-bar-vertical offcanvas-body">
+            <!-- LOGO -->
+            <div class="logo-vertical offcanvas-head">
+              <a href="#"><img src="./images/crest.png" alt="crest"></a>
+            </div>
             <!-- Home -->
             <div class="nav-item text-center">
               <div class="menu-item d-flex align-items-center">
@@ -220,73 +224,74 @@
             </div>
             <!-- About -->
             <div class="nav-item text-center">
-              <div class="menu-item d-flex align-items-center" >
+              <div class="menu-item d-flex align-items-center">
                 <a class="menu-txt" href="#url">About</a>
-                <a class="menu-arrow fa-solid fa-chevron-down" data-bs-toggle="collapse" href="#collapseAbout" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
               </div>
-              <ul class="collapse-list collapse list-sty-none " id="collapseAbout">
-                <li>About Us</li>
-                <li>About Me</li>
-                <li>Our team</li>
-                <li>History</li>
-                <li>Testimonials</li>
-                <li>Contact</li>
-                <li>Coming Soon</li>
-                <li>404</li>
+              <a class="menu-arrow fa-solid fa-chevron-down" data-bs-toggle="collapse" href="#collapseAbout" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+              <ul class="collapse-list collapse mb-0 list-sty-none" id="collapseAbout">
+                <li class="sub-menu-item"><a href="#url">About Us</a></li>
+                <li class="sub-menu-item"><a href="#url">About Me</a></li>
+                <li class="sub-menu-item"><a href="#url">Our team</a></li>
+                <li class="sub-menu-item"><a href="#url">History</a></li>
+                <li class="sub-menu-item"><a href="#url">Testimonials</a></li>
+                <li class="sub-menu-item"><a href="#url">Contact</a></li>
+                <li class="sub-menu-item"><a href="#url">Coming Soon</a></li>
+                <li class="sub-menu-item"><a href="#url">404</a></li>
               </ul>
             </div>
             <!-- Course -->
             <div class="nav-item text-center">
               <div class="menu-item d-flex align-items-center">
                 <a class="menu-txt" href="#url">Course</a>
-                <a class="menu-arrow fa-solid fa-chevron-down"  data-bs-toggle="collapse" href="#collapseCourses" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
               </div>
-              <ul class="collapse-list collapse list-sty-none " id="collapseCourses">
-                <li>Course</li>
-                <li>Single Course</li>
-                <li>Schedule</li>
-                <li>Workshop</li>
-                <li>Workshop & Event</li>
-                <li>Get Quote</li>
+              <a class="menu-arrow fa-solid fa-chevron-down" data-bs-toggle="collapse" href="#collapseCourses" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+              <ul class="collapse-list collapse mb-0 list-sty-none " id="collapseCourses">
+                <li class="sub-menu-item"><a href="#url">Course</a></li>
+                <li class="sub-menu-item"><a href="#url">Single Course</a></li>
+                <li class="sub-menu-item"><a href="#url">Schedule</a></li>
+                <li class="sub-menu-item"><a href="#url">Workshop</a></li>
+                <li class="sub-menu-item"><a href="#url">Workshop & Event</a></li>
+                <li class="sub-menu-item"><a href="#url">Get Quote</a></li>
               </ul>
             </div>
             <!-- Blog -->
             <div class="nav-item">
               <div class="menu-item d-flex align-items-center" >
                 <a class="menu-txt" href="#url">Blog</a>
-                <a class="menu-arrow fa-solid fa-chevron-down"data-bs-toggle="collapse" href="#collapseBlog" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
               </div>
-              <ul class="collapse-list collapse list-sty-none text-center " id="collapseBlog">
-                <li>Standard view</li>
-                <li>Collumns view</li>
-                <li>Simple view</li>
-                <li>Grid view</li>
-                <li>
+              <a class="menu-arrow fa-solid fa-chevron-down"data-bs-toggle="collapse" href="#collapseBlog" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+              <ul class="collapse-list collapse mb-0 list-sty-none text-center " id="collapseBlog">
+                <li class="sub-menu-item"><a href="#url">Standard view</a></li>
+                <li class="sub-menu-item"><a href="#url">Collumns view</a></li>
+                <li class="sub-menu-item"><a href="#url">Simple view</a></li>
+                <li class="sub-menu-item"><a href="#url">Grid view</a></li>
+                
+                <li class="sub-menu-item">
                   <div class="menu-item d-flex align-items-center">
                     <a class="menu-txt" href="#url">Single Post</a>
-                    <a class="menu-arrow fa-solid fa-chevron-down"  data-bs-toggle="collapse" href="#collapseSinglePost" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
                   </div>
-                  <ul class="collapse-list collapse list-sty-none " id="collapseSinglePost">
-                    <li>Standard Post</li>
-                    <li>Grid Gallery Post</li>
-                    <li>Carousel & Collumns Post</li>
-                    <li>Quote Post</li>
-                    <li>Link Post</li>
-                    <li>Audio Post</li>
-                    <li>Video Post</li>
+                  <a class="menu-arrow fa-solid fa-chevron-down"  data-bs-toggle="collapse" href="#collapseSinglePost" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                  <ul class="collapse-list collapse mb-0 list-sty-none " id="collapseSinglePost">
+                    <li><a href="#url">Standard Post</a></li>
+                    <li><a href="#url">Grid Gallery Post</a></li>
+                    <li><a href="#url">Carousel & Collumns Post</a></li>
+                    <li><a href="#url">Quote Post</a></li>
+                    <li><a href="#url">Link Post</a></li>
+                    <li><a href="#url">Audio Post</a></li>
+                    <li><a href="#url">Video Post</a></li>
                   </ul>
                 </li>
-                <li>
+                <li class="sub-menu-item">
                   <div class="menu-item d-flex align-items-center">
                     <a class="menu-txt" href="#url">Galleries</a>
-                    <a class="menu-arrow fa-solid fa-chevron-down"  data-bs-toggle="collapse" href="#collapseGalleries" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
                   </div>
-                  <ul class="collapse-list collapse list-sty-none" id="collapseGalleries">
-                    <li>Standard Post</li>
-                    <li>Carousel Post</li>
-                    <li>Grid Gallery</li>
-                    <li>Video Post</li>
-                    <li>Audio Post</li>
+                  <a class="menu-arrow fa-solid fa-chevron-down"  data-bs-toggle="collapse" href="#collapseGalleries" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                  <ul class="collapse-list collapse mb-0 list-sty-none" id="collapseGalleries">
+                    <li><a href="#url">Standard Post</a></li>
+                    <li><a href="#url">Carousel Post</a></li>
+                    <li><a href="#url">Grid Gallery</a></li>
+                    <li><a href="#url">Video Post</a></li>
+                    <li><a href="#url">Audio Post</a></li>
                   </ul>
                 </li>
               </ul>
@@ -295,75 +300,75 @@
             <div class="nav-item text-center">
               <div class="menu-item d-flex align-items-center">
                 <a class="menu-txt" href="#url">Shop</a>
-                <a class="menu-arrow fa-solid fa-chevron-down"  data-bs-toggle="collapse" href="#collapseShop" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
               </div>
-              <ul class="collapse-list collapse list-sty-none " id="collapseShop">
-                <li>Products</li>
-                <li>Cart</li>
-                <li>Checkout</li>
-                <li>Workshop</li>
-                <li>My Account</li>
+              <a class="menu-arrow fa-solid fa-chevron-down"  data-bs-toggle="collapse" href="#collapseShop" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+              <ul class="collapse-list collapse mb-0 list-sty-none " id="collapseShop">
+                <li class="sub-menu-item"><a href="#url">Products</a></li>
+                <li class="sub-menu-item"><a href="#url">Cart</a></li>
+                <li class="sub-menu-item"><a href="#url">Checkout</a></li>
+                <li class="sub-menu-item"><a href="#url">Workshop</a></li>
+                <li class="sub-menu-item"><a href="#url">My Account</a></li>
               </ul>
             </div>
             <!-- Element -->
             <div class="nav-item text-center">
               <div class="menu-item d-flex align-items-center">
                 <a class="menu-txt" href="#url">Element</a>
-                <a class="menu-arrow fa-solid fa-chevron-down"  data-bs-toggle="collapse" href="#collapseElement" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
               </div>
-              <ul class="collapse-list collapse list-sty-none " id="collapseElement">
-                <li>
-                  <div class="menu-item d-flex align-items-center" data-bs-toggle="collapse" href="#collapseBase" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <a class="menu-arrow fa-solid fa-chevron-down"  data-bs-toggle="collapse" href="#collapseElement" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+              <ul class="collapse-list collapse mb-0 list-sty-none " id="collapseElement">
+                <li class="sub-menu-item">
+                  <div class="menu-item d-flex align-items-center">
                     <a class="menu-txt" href="#url">Base</a>
-                    <a class="menu-arrow fa-solid fa-chevron-down"></a>
                   </div>
-                  <ul class="collapse-list collapse list-sty-none " id="collapseBase">
-                    <li>Headlines</li>
-                    <li>Button & Icons</li>
-                    <li>Images</li>
-                    <li>Organic Animation</li>
-                    <li>Inner Row & Collumn</li>
-                    <li>Countdown & Counter</li>
+                  <a class="menu-arrow fa-solid fa-chevron-down"  data-bs-toggle="collapse" href="#collapseBase" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                  <ul class="collapse-list collapse mb-0 list-sty-none " id="collapseBase">
+                    <li><a href="#url">Headlines</a></li>
+                    <li><a href="#url">Button & Icons</a></li>
+                    <li><a href="#url">Images</a></li>
+                    <li><a href="#url">Organic Animation</a></li>
+                    <li><a href="#url">Inner Row & Collumn</a></li>
+                    <li><a href="#url">Countdown & Counter</a></li>
                   </ul>
                 </li>
-                <li>
+                <li class="sub-menu-item">
                   <div class="menu-item d-flex align-items-center">
                     <a class="menu-txt" href="#url">Common</a>
-                    <a class="menu-arrow fa-solid fa-chevron-down" data-bs-toggle="collapse" href="#collapseCommon" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
                   </div>
-                  <ul class="collapse-list collapse list-sty-none " id="collapseCommon">
-                    <li>PriceList & Progress Bar</li>
-                    <li>Google Maps</li>
-                    <li>Services</li>
-                    <li>Accordions & Tabs</li>
-                    <li>Card & Event</li>
-                    <li>Schedule & Step Line</li>
+                  <a class="menu-arrow fa-solid fa-chevron-down" data-bs-toggle="collapse" href="#collapseCommon" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                  <ul class="collapse-list collapse mb-0 list-sty-none " id="collapseCommon">
+                    <li><a href="#url">PriceList & Progress Bar</a></li>
+                    <li><a href="#url">Google Maps</a></li>
+                    <li><a href="#url">Services</a></li>
+                    <li><a href="#url">Accordions & Tabs</a></li>
+                    <li><a href="#url">Card & Event</a></li>
+                    <li><a href="#url">Schedule & Step Line</a></li>
                   </ul>
                 </li>
-                <li>
+                <li class="sub-menu-item">
                   <div class="menu-item d-flex align-items-center">
                     <a class="menu-txt" href="#url">Presentational</a>
-                    <a class="menu-arrow fa-solid fa-chevron-down"  data-bs-toggle="collapse" href="#collapsePresentational" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
                   </div>
-                  <ul class="collapse-list collapse list-sty-none " id="collapsePresentational">
-                    <li>Team</li>
-                    <li>Slider</li>
-                    <li>Testimonials</li>
-                    <li>Cost Caculator</li>
-                    <li>Social Media</li>
-                    <li>Blog Layouts</li>
+                  <a class="menu-arrow fa-solid fa-chevron-down"  data-bs-toggle="collapse" href="#collapsePresentational" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                  <ul class="collapse-list collapse mb-0 list-sty-none " id="collapsePresentational">
+                    <li><a href="#url">Team</a></li>
+                    <li><a href="#url">Slider</a></li>
+                    <li><a href="#url">Testimonials</a></li>
+                    <li><a href="#url">Cost Caculator</a></li>
+                    <li><a href="#url">Social Media</a></li>
+                    <li><a href="#url">Blog Layouts</a></li>
                   </ul>
                 </li>
               </ul>
             </div>
-          </nav>
-
-          <div class="offcanvas-footer">
-            <a class="contact-btn btn-large decoration-none" href="tel:(+1) 555 234-8765"><i class="fa-solid fa-phone-flip"></i>(+1) 555 234-8765</a>
-            <div class="social-btns">
-              <a href="#url"><i class="fa-brands fa-twitter"></i></a> <a href="#url"><i class="fa-brands fa-facebook-f"></i></a> <a href="#url"><i class="fa-brands fa-youtube"></i></a><a href="#url"><i class="fa-brands fa-instagram"></i></a>
+            <!-- Contact -->
+            <div class="nav-contact">
+              <a class="contact-btn btn-large decoration-none" href="tel:(+1) 555 234-8765"><i class="fa-solid fa-phone-flip"></i>(+1) 555 234-8765</a>
+              <div class="social-btns">
+                <a href="#url"><i class="fa-brands fa-twitter"></i></a> <a href="#url"><i class="fa-brands fa-facebook-f"></i></a> <a href="#url"><i class="fa-brands fa-youtube"></i></a><a href="#url"><i class="fa-brands fa-instagram"></i></a>
+              </div>
             </div>
-          </div>
+          </nav>
         </div>
       </div>
     </header>
