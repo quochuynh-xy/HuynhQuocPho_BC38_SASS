@@ -1,10 +1,12 @@
 // helpers
 @import "../Helpers/variables";
 @import "../Helpers/mixin";
+@import "../Helpers/loop";
 // base
 @import "../base/resetcss";
 // components
 @import "../components/buttons";
+@import "../components/animation";
 // layout
 @import "../layouts/header";
 @import "../layouts/sidebar";
@@ -78,6 +80,7 @@
   .container.row {
     position: relative;
     padding: 0;
+    z-index: 1;
     .col {
       padding: 20px;
       .single-item {
@@ -124,6 +127,7 @@
   &::after {
     position: absolute;
     content: "";
+    z-index: 0;
     height: 60%;
     left: 0;
     right: 0;

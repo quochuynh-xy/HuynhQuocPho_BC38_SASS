@@ -1,5 +1,6 @@
 @import "../Helpers/variables";
 @import "../Helpers/mixin";
+@import "../Helpers/loop";
 @import "../components/buttons";
 .header {
   background-color: transparent;
@@ -17,7 +18,8 @@
       align-items: center;
       .nav-menu {
         ul {
-          .nav-col { //<li>
+          .nav-col {
+            //<li>
             margin-right: 50px; // fix the menu hover issue
             position: relative;
             .menu-item {
@@ -211,6 +213,64 @@
             transition: 0.3s;
             &:hover {
               color: $cl-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+  .vertial-header {
+    .ver-menu {
+    }
+    .offcanvas {
+      display: flex;
+      align-items: center;
+      width: 320px;
+      .logo-vertical {
+      }
+      .nav-bar-vertical {
+        font-size: 13px;
+        line-height: 1;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 3rem;
+        .nav-item {
+          position: relative;
+          .menu-item {
+            width: 100%;
+            .menu-txt {
+              padding: 1em 2em;
+              color: red;
+              display: block;
+              width: 100%;
+            }
+          }
+          .menu-arrow {
+            position: absolute;
+            color: red;
+            top: 0;
+            right: 0;
+            padding: 1em 2em;
+          }
+          .collapse-list {
+            .sub-menu-item {
+              position: relative;
+              font-size: 0.9em;
+              .menu-txt {
+                padding: 1em 2em;
+                color: orange;
+                display: block;
+                width: 100%;
+              }
+              .collapse-list {
+                li {
+                  padding: 1em 2em;
+                  a {
+                    color: green;
+                    font-size: 0.9em;
+                  }
+                }
+              }
             }
           }
         }

@@ -1,0 +1,11 @@
+@import "../Helpers/variables";
+@import "../Helpers/mixin";
+ 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    };
+    to {
+        opacity: 1;
+    }
+}

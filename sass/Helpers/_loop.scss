@@ -1,0 +1,7 @@
+@import "./variables";
+// loop delay:
+@for $i from 1 through 10 {
+    .delayed-#{$i} {
+        animation-delay: $i*0.5s;
+    }
+}
