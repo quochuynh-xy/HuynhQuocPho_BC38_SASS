@@ -743,8 +743,19 @@ body {
 .register .container .collum-img {
   text-align: end;
 }
+@media screen and (max-width: 1200px) {
+  .register .container .collum-img {
+    text-align: start;
+  }
+}
 .register .container .collum-img img {
   width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .register .container .collum-img img {
+    width: 60%;
+    margin-bottom: 3rem;
+  }
 }
 .register .container .collum-form {
   box-shadow: 0px 7px 10px 4px rgba(92, 92, 92, 0.3098039216);

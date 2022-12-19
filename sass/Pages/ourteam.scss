@@ -148,8 +148,15 @@
     }
     .collum-img {
       text-align: end;
+      @media screen and (max-width: 1200px) {
+        text-align: start;
+      }
       img {
         width: 100%;
+        @media screen and (max-width: 1200px) {
+          width: 60%;
+          margin-bottom: $m-3;
+        }
       }
     }
     .collum-form {
