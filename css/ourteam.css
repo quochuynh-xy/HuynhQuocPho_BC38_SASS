@@ -168,6 +168,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 1200px) {
+  .header .container {
+    padding: 0 30px;
+  }
+}
 .header .container .site-logo {
   width: 80px;
 }
@@ -415,6 +420,39 @@ body {
 .header .vertial-header .offcanvas .nav-bar-vertical .nav-contact .social-btns a {
   color: #191919;
   margin: 0 0.25rem;
+}
+
+.vertial-header {
+  display: none;
+}
+.vertial-header .ver-menu {
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  height: 48px;
+  top: 0;
+  padding-left: 2rem;
+}
+.vertial-header .ver-menu button {
+  background-color: #ffffff;
+  margin-right: 2rem;
+}
+.vertial-header .ver-menu button i {
+  color: #b61984;
+  font-size: 30px;
+}
+.vertial-header .ver-menu .bar img {
+  height: 48px;
+}
+
+body.showSidebar .ver-menu {
+  left: 320px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+body.showSidebar .ver-menu .bar {
+  display: none;
 }
 
 * {

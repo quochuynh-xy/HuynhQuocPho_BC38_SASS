@@ -43,7 +43,7 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="container d-flex">
+      <div class="d-none d-xl-flex container d-flex">
         <a class="site-logo" href="#"><img class="img-fluid" src="./images/crest.png" alt="Tabula"></a>
         <div class="nav-bar d-flex">
           <nav class="nav-menu">
@@ -154,12 +154,11 @@
           </div>
         </div>
       </div>
-      <div class="vertial-header">
-        <div class="ver-menu d-flex bg-dark">
-          <!-- open btn -->
-          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars"></i></button>
-          <!-- close btn -->
-          <button type="button" class="btn-close btn btn-primary" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
+      <div class="d-block d-xl-none vertial-header">
+        <div class="ver-menu d-flex">
+          <!-- open/close btn -->
+          <button id="btn-handleSidebar" class="" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars"></i></button>
+          
           <div class="bar">
             <img src="./images/crest.png" alt="crest.img">
           </div>
@@ -606,7 +605,7 @@
                 <textarea name="" id="" cols="30" rows="10"> Message</textarea>
               </div>
             </div>
-            <button class="btn-large" type="button">SEND</button>
+            <button class="btn-large my-4" type="button">SEND</button>
           </div>
         </div>
       </div>

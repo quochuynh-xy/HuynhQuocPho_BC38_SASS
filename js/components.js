@@ -13,13 +13,30 @@ let headerChange = () => {
         headerContainer.style.padding = "6px 0";
         headerContactBtn.style.height = "2.5rem";
         headerContactBtn.style.lineHeight = "2.5rem";
-        menuDot.style.transform = "translateY(-50%)";
+        // menuDot.style.transform = "translateY(-50%)";
     } else {
-        header.style.backgroundColor = "initial"
-        headerLogo.style.display = "initial";
-        headerContainer.style.padding = "initial";
+        header.style.backgroundColor = "unset"
+        headerLogo.style.display = "unset";
+        headerContainer.style.padding = "unset";
         headerContactBtn.style.height = "3.5rem";
         headerContactBtn.style.lineHeight = "3.5rem";
-        menuDot.style.bottom = "initial";
+        // menuDot.style.bottom = "initial";
     }
 }
+function resizeMenu() {
+    let btn = document.querySelector('#btn-handleSidebar');
+    document.querySelector('.offcanvas').classList.toggle("show");
+    let sideNav = document.querySelector('.offcanvas.offcanvas-start').classList.value.includes("show");
+    document.querySelector('body').classList.toggle("showSidebar");
+    if(sideNav) {
+        btn.innerHTML = '<i class="fa-solid fa-xmark"></i>'
+    } else {
+        btn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    }
+}
+function closeSidebar () {
+}
+function resizeMenuClose () {
+    // document.querySelector('selector');
+}
+document.querySelector('#btn-handleSidebar').onclick = resizeMenu;
