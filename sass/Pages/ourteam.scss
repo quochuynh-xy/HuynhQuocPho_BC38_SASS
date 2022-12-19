@@ -63,10 +63,13 @@
         @include text(1.1rem, 600, $cl-primary);
         text-transform: uppercase;
       }
-      h2 {
-        @include text(57px, $fw-bolder, $cl-dark);
-        line-height: 1.2;
-      }
+    }
+    h2 {
+      @include text(57px, $fw-bolder, $cl-dark);
+      line-height: 1.2;
+      @media screen and (max-width: 1200px) {
+        font-size: 3.15rem;
+    }
     }
     .b-ground {
     }
@@ -83,6 +86,9 @@
     z-index: 1;
     .col {
       padding: 20px;
+      @media screen and (max-width: 576px) {
+        padding: 10px;
+      }
       .single-item {
         position: relative;
         text-align: center;
@@ -150,6 +156,9 @@
       text-align: end;
       @media screen and (max-width: 1200px) {
         text-align: start;
+      }
+      @media screen and (max-width: 768px) {
+        text-align: center;
       }
       img {
         width: 100%;

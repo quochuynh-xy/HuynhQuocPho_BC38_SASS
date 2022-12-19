@@ -520,6 +520,11 @@ body {
 .footer .container .footer-col {
   padding: 0 40px;
 }
+@media screen and (max-width: 1200px) {
+  .footer .container .footer-col {
+    padding: 0 10px;
+  }
+}
 .footer .container .footer-col h4 {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
@@ -572,6 +577,11 @@ body {
 }
 .footer .container .col-func {
   padding: 0 50px 0 40px;
+}
+@media screen and (max-width: 1200px) {
+  .footer .container .col-func {
+    padding: 0 10px;
+  }
 }
 .footer .container .col-func form {
   font-size: 15px;
@@ -654,11 +664,16 @@ body {
   color: #b61984;
   text-transform: uppercase;
 }
-.about .container .intro h2 {
+.about .container h2 {
   font-size: 57px;
   font-weight: 700;
   color: #191919;
   line-height: 1.2;
+}
+@media screen and (max-width: 1200px) {
+  .about .container h2 {
+    font-size: 3.15rem;
+  }
 }
 .teacher {
   position: relative;
@@ -672,6 +687,11 @@ body {
 }
 .teacher .container.row .col {
   padding: 20px;
+}
+@media screen and (max-width: 576px) {
+  .teacher .container.row .col {
+    padding: 10px;
+  }
 }
 .teacher .container.row .col .single-item {
   position: relative;
@@ -746,6 +766,11 @@ body {
 @media screen and (max-width: 1200px) {
   .register .container .collum-img {
     text-align: start;
+  }
+}
+@media screen and (max-width: 768px) {
+  .register .container .collum-img {
+    text-align: center;
   }
 }
 .register .container .collum-img img {

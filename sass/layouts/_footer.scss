@@ -9,6 +9,9 @@
     .container {
       .footer-col {
         padding: 0 40px;
+        @media screen and (max-width: 1200px) {
+          padding:  0 10px;
+        }
         h4 {
           font-family: $ff-primary;
           @include text($fs-l, $fw-bolder, $cl-light);
@@ -73,6 +76,9 @@
       }
       .col-func {
           padding: 0 50px 0 40px;
+          @media screen and (max-width: 1200px) {
+            padding:  0 10px;
+          }
         form {
           font-size: $fs-primary;
           input {
