@@ -86,6 +86,8 @@
     z-index: 1;
     .col {
       padding: 20px;
+      animation-name: fadeIn;
+      animation-timing-function: ease-out;
       @media screen and (max-width: 576px) {
         padding: 10px;
       }
