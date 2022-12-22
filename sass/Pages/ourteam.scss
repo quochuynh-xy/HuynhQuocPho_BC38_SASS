@@ -59,19 +59,25 @@
   .container {
     align-items: center;
     .intro {
+      animation-name: slideInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
       h5 {
         @include text(1.1rem, 600, $cl-primary);
         text-transform: uppercase;
       }
-    }
-    h2 {
-      @include text(57px, $fw-bolder, $cl-dark);
-      line-height: 1.2;
-      @media screen and (max-width: 1200px) {
-        font-size: 3.15rem;
+      h2 {
+        @include text(57px, $fw-bolder, $cl-dark);
+        line-height: 1.2;
+        @media screen and (max-width: 1200px) {
+          font-size: 3.15rem;
+        }
       }
     }
     .b-ground {
+      animation-name: appearStay;
+      animation-timing-function: linear;
+      animation-duration: 0.75s;
     }
   }
 }
@@ -155,6 +161,9 @@
       padding: 0 $pd-3;
     }
     .collum-img {
+      animation-name: slideInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
       text-align: end;
       @media screen and (max-width: 1200px) {
         text-align: start;
@@ -171,6 +180,9 @@
       }
     }
     .collum-form {
+      animation-name: appearStay;
+      animation-timing-function: ease-in;
+      animation-duration: 1.25s;
       @include shadow-type1;
       background-color: $bgc-primaray;
       h3 {

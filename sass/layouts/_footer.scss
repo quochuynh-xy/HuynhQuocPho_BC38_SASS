@@ -2,6 +2,7 @@
 @import "../Helpers/variables";
 @import "../Helpers/mixin";
 @import "../components/buttons";
+@import "../components/animation";
 .footer {
     padding: $pd-section-footer 0;
     background-image: url(../../images/footer_background.jpg);
@@ -9,6 +10,8 @@
     .container {
       .footer-col {
         padding: 0 40px;
+        animation-name: fadeIn;
+        animation-timing-function: ease-out;
         @media screen and (max-width: 1200px) {
           padding:  0 10px;
         }

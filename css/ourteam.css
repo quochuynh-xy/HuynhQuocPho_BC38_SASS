@@ -1,41 +1,41 @@
 .delayed-1 {
-  animation-duration: 0.5s;
+  animation-duration: 0.75s;
 }
 
 .delayed-2 {
-  animation-duration: 1s;
-}
-
-.delayed-3 {
   animation-duration: 1.5s;
 }
 
+.delayed-3 {
+  animation-duration: 2.25s;
+}
+
 .delayed-4 {
-  animation-duration: 2s;
-}
-
-.delayed-5 {
-  animation-duration: 2.5s;
-}
-
-.delayed-6 {
   animation-duration: 3s;
 }
 
-.delayed-7 {
-  animation-duration: 3.5s;
+.delayed-5 {
+  animation-duration: 3.75s;
 }
 
-.delayed-8 {
-  animation-duration: 4s;
-}
-
-.delayed-9 {
+.delayed-6 {
   animation-duration: 4.5s;
 }
 
+.delayed-7 {
+  animation-duration: 5.25s;
+}
+
+.delayed-8 {
+  animation-duration: 6s;
+}
+
+.delayed-9 {
+  animation-duration: 6.75s;
+}
+
 .delayed-10 {
-  animation-duration: 5s;
+  animation-duration: 7.5s;
 }
 
 * {
@@ -119,44 +119,62 @@ body {
     transform: translateY(0);
   }
 }
+@keyframes appearStay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .delayed-1 {
-  animation-duration: 0.5s;
+  animation-duration: 0.75s;
 }
 
 .delayed-2 {
-  animation-duration: 1s;
-}
-
-.delayed-3 {
   animation-duration: 1.5s;
 }
 
+.delayed-3 {
+  animation-duration: 2.25s;
+}
+
 .delayed-4 {
-  animation-duration: 2s;
-}
-
-.delayed-5 {
-  animation-duration: 2.5s;
-}
-
-.delayed-6 {
   animation-duration: 3s;
 }
 
-.delayed-7 {
-  animation-duration: 3.5s;
+.delayed-5 {
+  animation-duration: 3.75s;
 }
 
-.delayed-8 {
-  animation-duration: 4s;
-}
-
-.delayed-9 {
+.delayed-6 {
   animation-duration: 4.5s;
 }
 
+.delayed-7 {
+  animation-duration: 5.25s;
+}
+
+.delayed-8 {
+  animation-duration: 6s;
+}
+
+.delayed-9 {
+  animation-duration: 6.75s;
+}
+
 .delayed-10 {
-  animation-duration: 5s;
+  animation-duration: 7.5s;
 }
 
 .btn-large {
@@ -553,6 +571,51 @@ body {
   background-color: #ffffff;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes upHidedownShow {
+  0% {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes appearStay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .footer {
   padding: 120px 0;
   background-image: url(../../images/footer_background.jpg);
@@ -563,6 +626,8 @@ body {
 }
 .footer .container .footer-col {
   padding: 0 40px;
+  animation-name: fadeIn;
+  animation-timing-function: ease-out;
 }
 @media screen and (max-width: 1200px) {
   .footer .container .footer-col {
@@ -702,23 +767,34 @@ body {
 .about .container {
   align-items: center;
 }
+.about .container .intro {
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
 .about .container .intro h5 {
   font-size: 1.1rem;
   font-weight: 600;
   color: #b61984;
   text-transform: uppercase;
 }
-.about .container h2 {
+.about .container .intro h2 {
   font-size: 57px;
   font-weight: 700;
   color: #191919;
   line-height: 1.2;
 }
 @media screen and (max-width: 1200px) {
-  .about .container h2 {
+  .about .container .intro h2 {
     font-size: 3.15rem;
   }
 }
+.about .container .b-ground {
+  animation-name: appearStay;
+  animation-timing-function: linear;
+  animation-duration: 0.75s;
+}
+
 .teacher {
   position: relative;
   padding-top: 1rem;
@@ -807,6 +883,9 @@ body {
   padding: 0 3rem;
 }
 .register .container .collum-img {
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
   text-align: end;
 }
 @media screen and (max-width: 1200px) {
@@ -829,6 +908,9 @@ body {
   }
 }
 .register .container .collum-form {
+  animation-name: appearStay;
+  animation-timing-function: ease-in;
+  animation-duration: 1.25s;
   box-shadow: 0px 7px 10px 4px rgba(92, 92, 92, 0.3098039216);
   background-color: #ffffff;
   color: #191919;

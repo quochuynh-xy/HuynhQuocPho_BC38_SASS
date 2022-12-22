@@ -4,9 +4,11 @@ window.onscroll = () => {
 let headerChange = () => {
     let header = document.querySelector('header.header');
     if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ) {
-        header.classList.add("scrolling")
+        header.classList.add("scrolling");
+        header.classList.remove("stay");
     } else {
        header.classList.remove("scrolling");
+    //    header.classList.add("stay");
     }
 }
 function resizeMenu() {
