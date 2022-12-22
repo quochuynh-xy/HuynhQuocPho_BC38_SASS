@@ -1,41 +1,41 @@
 .delayed-1 {
-  animation-delay: 0.5s;
+  animation-duration: 0.5s;
 }
 
 .delayed-2 {
-  animation-delay: 1s;
+  animation-duration: 1s;
 }
 
 .delayed-3 {
-  animation-delay: 1.5s;
+  animation-duration: 1.5s;
 }
 
 .delayed-4 {
-  animation-delay: 2s;
+  animation-duration: 2s;
 }
 
 .delayed-5 {
-  animation-delay: 2.5s;
+  animation-duration: 2.5s;
 }
 
 .delayed-6 {
-  animation-delay: 3s;
+  animation-duration: 3s;
 }
 
 .delayed-7 {
-  animation-delay: 3.5s;
+  animation-duration: 3.5s;
 }
 
 .delayed-8 {
-  animation-delay: 4s;
+  animation-duration: 4s;
 }
 
 .delayed-9 {
-  animation-delay: 4.5s;
+  animation-duration: 4.5s;
 }
 
 .delayed-10 {
-  animation-delay: 5s;
+  animation-duration: 5s;
 }
 
 * {
@@ -93,10 +93,15 @@ body {
 }
 
 @keyframes fadeIn {
-  from {
+  0% {
     opacity: 0;
+    transform: translateX(-200%);
   }
-  to {
+  50% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -115,43 +120,43 @@ body {
   }
 }
 .delayed-1 {
-  animation-delay: 0.5s;
+  animation-duration: 0.5s;
 }
 
 .delayed-2 {
-  animation-delay: 1s;
+  animation-duration: 1s;
 }
 
 .delayed-3 {
-  animation-delay: 1.5s;
+  animation-duration: 1.5s;
 }
 
 .delayed-4 {
-  animation-delay: 2s;
+  animation-duration: 2s;
 }
 
 .delayed-5 {
-  animation-delay: 2.5s;
+  animation-duration: 2.5s;
 }
 
 .delayed-6 {
-  animation-delay: 3s;
+  animation-duration: 3s;
 }
 
 .delayed-7 {
-  animation-delay: 3.5s;
+  animation-duration: 3.5s;
 }
 
 .delayed-8 {
-  animation-delay: 4s;
+  animation-duration: 4s;
 }
 
 .delayed-9 {
-  animation-delay: 4.5s;
+  animation-duration: 4.5s;
 }
 
 .delayed-10 {
-  animation-delay: 5s;
+  animation-duration: 5s;
 }
 
 .btn-large {
@@ -726,6 +731,8 @@ body {
 }
 .teacher .container.row .col {
   padding: 20px;
+  animation-name: fadeIn;
+  animation-timing-function: ease-out;
 }
 @media screen and (max-width: 576px) {
   .teacher .container.row .col {
