@@ -46,3 +46,11 @@
         opacity: 1;
     }
 }
+@keyframes slideLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(320px);
+    }
+}

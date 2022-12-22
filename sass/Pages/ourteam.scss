@@ -306,13 +306,18 @@
   }
 }
 body.showSidebar {
-  position: relative;
-  background-color: burlywood;
-  .about,
-  .teacher,
-  .register,
-  .footer {
-    transform: translateX(320px);
+  .main-box {
+    position: relative;
+    overflow: hidden;
+    .about,
+    .teacher,
+    .register,
+    .footer {
+      position: relative;
+      transform: translateX(320px);
+      animation: slideLeft;
+      animation-duration: 0.5s;
+    }
   }
 }
 //////   DELETE AFTER FINISH SITE //////

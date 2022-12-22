@@ -137,6 +137,14 @@ body {
     opacity: 1;
   }
 }
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(320px);
+  }
+}
 .delayed-1 {
   animation-duration: 0.75s;
 }
@@ -616,6 +624,14 @@ body {
     opacity: 1;
   }
 }
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(320px);
+  }
+}
 .footer {
   padding: 120px 0;
   background-image: url(../../images/footer_background.jpg);
@@ -1014,13 +1030,16 @@ body {
   background-attachment: scroll;
 }
 
-body.showSidebar {
+body.showSidebar .main-box {
   position: relative;
-  background-color: burlywood;
+  overflow: hidden;
 }
-body.showSidebar .about,
-body.showSidebar .teacher,
-body.showSidebar .register,
-body.showSidebar .footer {
+body.showSidebar .main-box .about,
+body.showSidebar .main-box .teacher,
+body.showSidebar .main-box .register,
+body.showSidebar .main-box .footer {
+  position: relative;
   transform: translateX(320px);
+  animation: slideLeft;
+  animation-duration: 0.5s;
 }
