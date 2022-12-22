@@ -69,7 +69,7 @@
       line-height: 1.2;
       @media screen and (max-width: 1200px) {
         font-size: 3.15rem;
-    }
+      }
     }
     .b-ground {
     }
@@ -291,5 +291,14 @@
     @include bg-position;
   }
 }
-
+body.showSidebar {
+  position: relative;
+  background-color: burlywood;
+  .about,
+  .teacher,
+  .register,
+  .footer {
+    transform: translateX(320px);
+  }
+}
 //////   DELETE AFTER FINISH SITE //////

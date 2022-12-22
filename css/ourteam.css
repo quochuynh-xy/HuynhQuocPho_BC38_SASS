@@ -100,6 +100,20 @@ body {
     opacity: 1;
   }
 }
+@keyframes upHidedownShow {
+  0% {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .delayed-1 {
   animation-delay: 0.5s;
 }
@@ -211,13 +225,6 @@ body {
   transform: translateX(-50%) scale(100%);
   z-index: 1;
 }
-.header .container .nav-bar .nav-menu ul .nav-col .menu-item:hover::after {
-  transform: translateX(-50%) scale(130%);
-}
-.header .container .nav-bar .nav-menu ul .nav-col .menu-item.active:hover::after {
-  transform: translateX(-50%) scale(130%);
-  z-index: 20;
-}
 .header .container .nav-bar .nav-menu ul .nav-col .sub-menu-item, .header .container .nav-bar .nav-menu ul .nav-col .sub-menu-item3, .header .container .nav-bar .nav-menu ul .nav-col .sub-menu-item2 {
   position: absolute;
   top: calc(100% + 18px);
@@ -327,6 +334,13 @@ body {
   content: "";
   display: block;
 }
+.header .container .nav-bar .nav-menu ul .nav-col:hover .menu-item::after {
+  transform: translateX(-50%) scale(130%);
+}
+.header .container .nav-bar .nav-menu ul .nav-col:hover .menu-item.active::after {
+  transform: translateX(-50%) scale(130%);
+  z-index: 20;
+}
 .header .container .nav-bar .nav-contact {
   align-items: center;
 }
@@ -420,6 +434,31 @@ body {
 .header .vertial-header .offcanvas .nav-bar-vertical .nav-contact .social-btns a {
   color: #191919;
   margin: 0 0.25rem;
+}
+
+.header.scrolling {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 4px 0px rgba(92, 92, 92, 0.3098039216);
+  animation-name: upHidedownShow;
+  animation-duration: 1s;
+}
+.header.scrolling .container {
+  height: 49px;
+}
+.header.scrolling .container .site-logo img {
+  display: none;
+}
+.header.scrolling .container .nav-bar .nav-menu ul .nav-col:hover .sub-menu-item,
+.header.scrolling .container .nav-bar .nav-menu ul .nav-col:hover .sub-menu-item2,
+.header.scrolling .container .nav-bar .nav-menu ul .nav-col:hover .sub-menu-item3 {
+  top: calc(100% + 10px);
+}
+.header.scrolling .container .nav-bar .nav-menu ul .nav-col .menu-item::after {
+  bottom: -20px;
+}
+.header.scrolling .container .nav-bar .nav-contact .contact-btn {
+  height: 2.5rem;
+  line-height: 2.5rem;
 }
 
 .vertial-header {
@@ -884,4 +923,15 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
+}
+
+body.showSidebar {
+  position: relative;
+  background-color: burlywood;
+}
+body.showSidebar .about,
+body.showSidebar .teacher,
+body.showSidebar .register,
+body.showSidebar .footer {
+  transform: translateX(320px);
 }
