@@ -2,12 +2,15 @@
 @import "../Helpers/mixin";
 @import "../Helpers/loop";
 @import "../components/buttons";
+@import '../components/animation';
 .header {
   background-color: transparent;
   position: fixed;
   left: 0;
   right: 0;
   z-index: 10;
+  animation-name: upHidedownShow2;
+  animation-duration: 1s;
   .container {
     justify-content: space-between;
     align-items: center;
@@ -355,10 +358,6 @@
     }
   }
 }
-// .header.stay {
-//   animation-name: upHidedownShow;
-//   animation-duration: 2s;
-// }
 // Show and hide side bar
 .vertial-header {
   display: none;

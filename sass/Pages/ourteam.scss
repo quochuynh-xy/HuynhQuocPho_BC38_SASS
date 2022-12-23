@@ -47,7 +47,7 @@
   .about__bg-lower {
     position: absolute;
     height: 100%;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     right: 0;
     z-index: -1;
@@ -121,6 +121,9 @@
         }
         .item-detail {
           padding: 0 $pd-2 calc($pd-2 + 5px);
+          @media screen and (max-width: 576px) {
+          padding: 0 $pd-15 calc($pd-2 + 5px);
+          }
           .country {
             @include text(0.75rem, $fw-bold, $cl-primary);
             text-transform: uppercase;
@@ -145,7 +148,7 @@
     height: 60%;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -1px;
     background-image: url(../../images/Wave_White_bottom_right_shape_01.png);
     @include bg-position();
     background-position: center;
@@ -300,7 +303,7 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -1px;
     background-image: url(../../images/accent_bottom_wave_01.png);
     @include bg-position;
   }

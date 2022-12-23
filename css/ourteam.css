@@ -119,6 +119,20 @@ body {
     transform: translateY(0);
   }
 }
+@keyframes upHidedownShow2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes appearStay {
   from {
     opacity: 0;
@@ -202,12 +216,81 @@ body {
   background-color: #ffffff;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes upHidedownShow {
+  0% {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes upHidedownShow2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes appearStay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(320px);
+  }
+}
 .header {
   background-color: transparent;
   position: fixed;
   left: 0;
   right: 0;
   z-index: 10;
+  animation-name: upHidedownShow2;
+  animation-duration: 1s;
 }
 .header .container {
   justify-content: space-between;
@@ -606,6 +689,20 @@ body {
     transform: translateY(0);
   }
 }
+@keyframes upHidedownShow2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 @keyframes appearStay {
   from {
     opacity: 0;
@@ -768,7 +865,7 @@ body {
 .about .about__bg-lower {
   position: absolute;
   height: 100%;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   right: 0;
   z-index: -1;
@@ -857,6 +954,11 @@ body {
 .teacher .container.row .col .single-item .item-detail {
   padding: 0 2rem calc(2rem + 5px);
 }
+@media screen and (max-width: 576px) {
+  .teacher .container.row .col .single-item .item-detail {
+    padding: 0 1.5rem calc(2rem + 5px);
+  }
+}
 .teacher .container.row .col .single-item .item-detail .country {
   font-size: 0.75rem;
   font-weight: 600;
@@ -881,7 +983,7 @@ body {
   height: 60%;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   background-image: url(../../images/Wave_White_bottom_right_shape_01.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -1022,7 +1124,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   background-image: url(../../images/accent_bottom_wave_01.png);
   background-position: center;
   background-repeat: no-repeat;
