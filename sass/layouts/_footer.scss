@@ -7,6 +7,7 @@
     padding: $pd-section-footer 0;
     background-image: url(../../images/footer_background.jpg);
     @include bg-position(bottom, cover, scroll);
+    @include trasn;
     .container {
       .footer-col {
         padding: 0 40px;

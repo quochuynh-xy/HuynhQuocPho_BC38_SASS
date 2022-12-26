@@ -49,11 +49,14 @@
 }
 @mixin btn-boxshdow-dark {
   box-shadow: inset 0px 0px 0px 100px $cl-primary;
-} ;
+}
 // border
 @mixin border-type-1 {
   border: 1px solid #ffffff1a;
 }
 @mixin border-type-2 {
   border: 1px solid #ffffff;
+}
+@mixin trasn {
+  transition: all 0.5s linear;
 }

@@ -389,6 +389,9 @@
       }
     }
   }
+  .offcanvas {
+  @include trasn;
+  }
 }
 body.showSidebar {
   .ver-menu {

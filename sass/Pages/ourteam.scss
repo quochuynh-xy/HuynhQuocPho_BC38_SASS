@@ -307,6 +307,9 @@
     @include bg-position($bg-position: bottom, $bg-size: contain, $bg-attach: scroll);
   }
 }
+.about, .teacher, .register {
+  @include trasn;
+}
 body.showSidebar {
   .main-box {
     position: relative;
@@ -317,8 +320,8 @@ body.showSidebar {
     .footer {
       position: relative;
       transform: translateX(320px);
-      animation: slideLeft;
-      animation-duration: 0.5s;
+      // animation: slideLeft;
+      // animation-duration: 0.5s;
     }
   }
 }

@@ -603,6 +603,9 @@ body {
 .vertial-header .ver-menu .bar img {
   height: 48px;
 }
+.vertial-header .offcanvas {
+  transition: all 0.5s linear;
+}
 
 body.showSidebar .ver-menu {
   left: 320px;
@@ -742,6 +745,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
+  transition: all 0.5s linear;
 }
 .footer .container .footer-col {
   padding: 0 40px;
@@ -1137,6 +1141,10 @@ body {
   background-attachment: scroll;
 }
 
+.about, .teacher, .register {
+  transition: all 0.5s linear;
+}
+
 body.showSidebar .main-box {
   position: relative;
   overflow: hidden;
@@ -1147,6 +1155,4 @@ body.showSidebar .main-box .register,
 body.showSidebar .main-box .footer {
   position: relative;
   transform: translateX(320px);
-  animation: slideLeft;
-  animation-duration: 0.5s;
 }
