@@ -507,6 +507,9 @@ body {
   display: block;
   width: 100%;
 }
+.header .vertial-header .offcanvas .nav-bar-vertical .nav-item .menu-item .menu-txt.active {
+  font-weight: bold;
+}
 .header .vertial-header .offcanvas .nav-bar-vertical .nav-item .menu-arrow {
   position: absolute;
   color: red;
@@ -520,6 +523,9 @@ body {
 .header .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .sub-menu-item, .header .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .container .nav-bar .nav-menu ul .nav-col .sub-menu-item2, .header .container .nav-bar .nav-menu ul .nav-col .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .sub-menu-item2, .header .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .container .nav-bar .nav-menu ul .nav-col .sub-menu-item3, .header .container .nav-bar .nav-menu ul .nav-col .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .sub-menu-item3 {
   position: relative;
   font-size: 0.9em;
+}
+.header .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .sub-menu-item.active, .header .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .container .nav-bar .nav-menu ul .nav-col .active.sub-menu-item2, .header .container .nav-bar .nav-menu ul .nav-col .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .active.sub-menu-item2, .header .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .container .nav-bar .nav-menu ul .nav-col .active.sub-menu-item3, .header .container .nav-bar .nav-menu ul .nav-col .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .active.sub-menu-item3 {
+  font-weight: bold;
 }
 .header .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .sub-menu-item a, .header .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .container .nav-bar .nav-menu ul .nav-col .sub-menu-item2 a, .header .container .nav-bar .nav-menu ul .nav-col .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .sub-menu-item2 a, .header .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .container .nav-bar .nav-menu ul .nav-col .sub-menu-item3 a, .header .container .nav-bar .nav-menu ul .nav-col .vertial-header .offcanvas .nav-bar-vertical .nav-item .collapse-list .sub-menu-item3 a {
   padding: 1em 2em;

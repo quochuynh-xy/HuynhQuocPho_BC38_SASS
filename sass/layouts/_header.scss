@@ -2,7 +2,7 @@
 @import "../Helpers/mixin";
 @import "../Helpers/loop";
 @import "../components/buttons";
-@import '../components/animation';
+@import "../components/animation";
 .header {
   background-color: transparent;
   position: fixed;
@@ -153,7 +153,8 @@
                 top: -20px;
               }
             }
-            &:hover { // hover này tác động lên sub menu item và dấu chấm phía sau.
+            &:hover {
+              // hover này tác động lên sub menu item và dấu chấm phía sau.
               .sub-menu-item,
               .sub-menu-item2,
               .sub-menu-item3 {
@@ -251,6 +252,9 @@
               text-decoration: none;
               display: block;
               width: 100%;
+              &.active {
+                font-weight: bold;
+              }
             }
           }
           .menu-arrow {
@@ -269,6 +273,9 @@
               // menu cấp 2 (con menu cấp 1)
               position: relative;
               font-size: 0.9em;
+              &.active {
+                font-weight: bold;
+              }
               & a {
                 // menu cấp 3  (con menu cấp 2)
                 padding: 1em 2em;
@@ -383,12 +390,14 @@
     }
   }
 }
-body.showSidebar .ver-menu {
-  left: 320px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  .bar {
-    display: none;
+body.showSidebar {
+  .ver-menu {
+    left: 320px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    .bar {
+      display: none;
+    }
   }
 }
