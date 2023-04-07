@@ -740,7 +740,7 @@ body {
 }
 .footer {
   padding: 120px 0;
-  background-image: url(../../images/footer_background.jpg);
+  background-image: url(../images/footer_background.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -865,7 +865,7 @@ body {
   left: 0;
   right: 0;
   z-index: -1;
-  background-image: url(../../images/yellow_top_wave_01.png);
+  background-image: url(../images/yellow_top_wave_01.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -879,7 +879,7 @@ body {
   left: 0;
   right: 0;
   z-index: -1;
-  background-image: url(../../images/Violet_top_left_wave.png);
+  background-image: url(../images/Violet_top_left_wave.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -994,10 +994,10 @@ body {
   left: 0;
   right: 0;
   bottom: -1px;
-  background-image: url(../../images/Wave_White_bottom_right_shape_01.png);
+  background-image: url(../images/Wave_White_bottom_right_shape_01.png);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: scroll;
 }
 
@@ -1134,10 +1134,10 @@ body {
   left: 0;
   right: 0;
   bottom: -1px;
-  background-image: url(../../images/accent_bottom_wave_01.png);
+  background-image: url(../images/accent_bottom_wave_01.png);
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: scroll;
 }
 

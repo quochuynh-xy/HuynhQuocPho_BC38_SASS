@@ -40,7 +40,7 @@
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(../../images/yellow_top_wave_01.png);
+    background-image: url(../images/yellow_top_wave_01.png);
     @include bg-position();
     background-position: bottom left;
   }
@@ -51,7 +51,7 @@
     left: 0;
     right: 0;
     z-index: -1;
-    background-image: url(../../images/Violet_top_left_wave.png);
+    background-image: url(../images/Violet_top_left_wave.png);
     @include bg-position();
     background-position: bottom;
     background-size: contain;
@@ -149,7 +149,7 @@
     left: 0;
     right: 0;
     bottom: -1px;
-    background-image: url(../../images/Wave_White_bottom_right_shape_01.png);
+    background-image: url(../images/Wave_White_bottom_right_shape_01.png);
     @include bg-position($bg-position: bottom, $bg-size: contain, $bg-attach: scroll);
   }
 }
@@ -303,7 +303,7 @@
     left: 0;
     right: 0;
     bottom: -1px;
-    background-image: url(../../images/accent_bottom_wave_01.png);
+    background-image: url(../images/accent_bottom_wave_01.png);
     @include bg-position($bg-position: bottom, $bg-size: contain, $bg-attach: scroll);
   }
 }

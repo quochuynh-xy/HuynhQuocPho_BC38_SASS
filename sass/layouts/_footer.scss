@@ -5,7 +5,7 @@
 @import "../components/animation";
 .footer {
     padding: $pd-section-footer 0;
-    background-image: url(../../images/footer_background.jpg);
+    background-image: url(../images/footer_background.jpg);
     @include bg-position(bottom, cover, scroll);
     @include trasn;
     .container {
